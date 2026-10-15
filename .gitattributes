@@ -1,0 +1,5 @@
+# Keep LF line endings in every clone.
+# On Windows git defaults to core.autocrlf=true, which rewrites the working tree
+# to CRLF; the Mavis skill linter then fails with "frontmatter.name is missing"
+# because it parses SKILL.md line by line.
+* text=auto eol=lf
